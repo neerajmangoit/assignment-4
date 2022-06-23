@@ -1,0 +1,7 @@
+<div class="mx-5 my-5">
+    <button class="btn btn-primary px-4" (click)="showText = !showText">Click</button>
+    <hr>
+    <h2 *ngIf="showText">This is angular</h2>
+</div>
+<button class="btn btn-primary px-4 mx-5 my-5" (click)="count()">Click</button>
+    <h3 [ngStyle]="{color : countnum < 5 ? 'blue' : 'red'}" class="mx-5">{{countnum}}</h3>
